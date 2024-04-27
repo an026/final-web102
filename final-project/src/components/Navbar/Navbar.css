@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: center; /* Centers navbar items horizontally */
+    align-items: center; /* Centers navbar items vertically */
+    padding: 10px;
+    position: fixed; /* Fix navbar to the top */
+    top: 0; /* Align to the top edge of the screen */
+    left: 0; /* Align to the left edge of the screen */
+    width: 100%; /* Navbar spans the full width of the viewport */
+    background-color: #fff; /* Change color as needed */
+    z-index: 1000; /* Ensures navbar stays above other content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds shadow for better separation */
+}
+
+/* Container for the logo, search, and navigation links */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Example max-width */
+    margin: 0 auto; /* Centers the nav-container within the navbar */
+}
+
+.logo, .search, .navigation {
+    flex: 1; /* This gives each section equal weight */
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start; /* Align logo to the left */
+    padding: 8px 10px;
+}
+
+.search input {
+    width: 100%; /* Full width of its container */
+    max-width: 500px; /* Set a max-width for larger screens */
+    padding: 8px 10px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end; /* Align navigation links to the right */
+    padding: 8px 10px;
+}
+
+.navigation .nav-link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
